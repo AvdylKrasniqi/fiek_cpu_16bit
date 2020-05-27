@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon May 25 22:19:21 2020
+# Process ID: 8944
+# Current directory: C:/Users/Hp/Desktop/Arkitektura_1_2 (3rd copy)/Arkitektura_1_2 (3rd copy)
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12036 C:\Users\Hp\Desktop\Arkitektura_1_2 (3rd copy)\Arkitektura_1_2 (3rd copy)\Arkitektura_1.xpr
+# Log file: C:/Users/Hp/Desktop/Arkitektura_1_2 (3rd copy)/Arkitektura_1_2 (3rd copy)/vivado.log
+# Journal file: C:/Users/Hp/Desktop/Arkitektura_1_2 (3rd copy)/Arkitektura_1_2 (3rd copy)\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 25 22:21:36 2020...
