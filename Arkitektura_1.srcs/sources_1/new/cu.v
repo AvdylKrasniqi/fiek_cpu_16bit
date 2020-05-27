@@ -28,47 +28,47 @@ begin
 case(opcode)
 2'b00: //R format
 begin 
-RegDst = 1;
-ALUSrc = 0; 
-MemToReg = 0; 
-RegWrite = 1; 
-MemRead = 0; 
-MemWrite = 0; 
-ALUOp = 1; 
+RegDst <= 1;
+ALUSrc <= 0; 
+MemToReg <= 0; 
+RegWrite <= 1; 
+MemRead <= 0; 
+MemWrite <= 0; 
+ALUOp <= 1; 
 end
 
 2'b01: //I-FORMAT 
 begin 
-RegDst = 0; 
-ALUSrc = 1; 
-MemToReg = 0; 
-RegWrite = 1; 
-MemRead = 0; 
-MemWrite = 0; 
-ALUOp = 0; 
+RegDst <= 0; 
+ALUSrc <= 1; 
+MemToReg <= 0; 
+RegWrite <= 1; 
+MemRead <= 0; 
+MemWrite <= 0; 
+ALUOp <= 0; 
 end
 
 
 2'b10: // LW
 begin 
-MemRead = 1; 
-RegDst = 0; 
-ALUSrc = 1; 
-MemToReg = 1; 
-RegWrite = 1; 
-MemWrite = 0;
-ALUOp = 0;
+MemRead <= 1; 
+RegDst <= 0; 
+ALUSrc <= 1; 
+MemToReg <= 1; 
+RegWrite <= 1; 
+MemWrite <= 0;
+ALUOp <= 0;
 end
 
 2'b11: // SW
 begin 
-RegDst = 0; 
-ALUSrc = 1; 
-MemToReg = 0; 
-RegWrite = 0; 
-MemRead = 0; 
-MemWrite = 1; 
-ALUOp = 0;
+RegDst <= 0; 
+ALUSrc <= 1; 
+MemToReg <= 0; 
+RegWrite <= 0; 
+MemRead <= 0; 
+MemWrite <= 1; 
+ALUOp <= 0;
 end
 
 //6'b000100: // BEQ

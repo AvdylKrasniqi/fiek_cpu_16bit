@@ -32,16 +32,17 @@ wire clk;
 reg[15:0] DataMemory[127:0];
 initial $readmemh("dataMem.mem", DataMemory);
 
-always @ (posedge clk)
+//always @ (posedge clk)
+always @ (posedge clk or posedge MemRead or posedge MemWrite)
 begin
-ReadData = DataMemory[AdresaNeHyrje];
 if(MemWrite)
     begin
         DataMemory[AdresaNeHyrje] = WriteData;
     end
-//if(MemRead)
-//    begin
-//    end
+if(MemRead)
+    begin
+        ReadData = DataMemory[AdresaNeHyrje];
+    end
 end
 
 endmodule
